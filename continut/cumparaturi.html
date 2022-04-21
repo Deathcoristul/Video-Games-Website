@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Cumparaturi</title>
+        <link rel="stylesheet" href="css/stil.css" />
+        <meta charset="utf-8"/>
+        <script src="js/cumparaturi.js"></script>
+    </head>
+    <body>
+        <main id="continut">
+            <form>
+                <label>Nume:</label>
+                <input type="text" id="name" name="name" />
+                <label >Cantitate:</label>
+                <input type="text" id="cant" name="cant" />
+                <input type="button" id="buton" onclick="add()" value="Adaugă" />
+                <input type="button" id="save" onclick="saveLocal()" value="Salvează în depozit local" />
+                <input type="button" id="savedb" onclick="saveDB()" value="Salvează în IndexedDB" />
+            </form><br/>
+            <table id="buy">
+                <tr>
+                    <th>ID</th>
+                    <th>nume</th>
+                    <th>cantitate</th>
+                </tr>
+            </table>
+        </main>
+    </body>
+</html>

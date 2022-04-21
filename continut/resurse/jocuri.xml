@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-model href="jocuri.dtd"?>
+<jocuri>
+    <joc id="1">
+        <nume>Conan Exiles</nume>
+        <tip>Open-World &amp; Survival</tip>
+        <firma>
+            <nume_firma>Funcom</nume_firma>
+            <locatie>Norvegia,Oslo</locatie>
+        </firma>
+        <data>
+            <an>2017</an>
+            <luna>ianuarie</luna>
+            <zi>31</zi>
+        </data>
+        <online>da</online>
+    </joc>
+    <joc id="2">
+        <nume>World of Warcraft</nume>
+        <tip>MMORPG</tip>
+        <firma>
+            <nume_firma>Blizzard</nume_firma>
+            <locatie>SUA California</locatie>
+        </firma>
+        <data>
+            <an>2004</an>
+            <luna>noiembrie</luna>
+            <zi>23</zi>
+        </data>
+        <online>da</online>
+    </joc>
+    <joc id="3">
+        <nume>Shovel Knight</nume>
+        <tip>Platformer</tip>
+        <firma>
+            <nume_firma>Yacht Club Games</nume_firma>
+            <locatie>SUA Los Angeles</locatie>
+        </firma>
+        <data>
+            <an>2014</an>
+            <luna>iunie</luna>
+            <zi>26</zi>
+        </data>
+        <online>nu</online>
+    </joc>
+</jocuri>

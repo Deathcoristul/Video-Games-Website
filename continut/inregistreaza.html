@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inregistreaza</title>
+        <link rel="stylesheet" href="css/stil.css" />
+        <meta charset="utf-8"/>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <main id="continut">
+            <form action="localhost:5678" id="signup" onsubmit="signUp()" method="post">
+                <fieldset>
+                    <label>Nume de utilizator:</label>
+                    <input type="text" id="user_name" name="user_name" onkeyup="enable()"><br><br>
+                    <label>Nume:</label>
+                    <input type="text" id="last_name" name="last_name" onkeyup="enable()"><br><br>
+                    <label >Prenume:</label>
+                    <input type="text" id="first_name" name="first_name" onkeyup="enable()"><br><br>
+                    <label >Gen:</label>
+                    <select>
+                        <option>M</option>
+                        <option>F</option>
+                    </select><br><br>
+                    <label >Parola:</label>
+                    <input type="password" id="password" name="password" onkeyup="enable()"><br><br>
+                    <label >E-mail:</label>
+                    <input type="email" id="e_mail" name="e_mail" onkeyup="enable()"><br><br>
+                    <label >Telefon:</label>
+                    <input type="tel" id="phone" name="phone" onkeyup="enable()"><br><br>
+                    <label >Vârsta:</label>
+                    <input type="range" min="7" max="80" id="age" name="age"><br><br>
+                    <label >Data nașterii:</label>
+                    <input type="date" id="birth_date" name="birth_date"><br><br>
+                    <label >Ora nașterii:</label>
+                    <input type="time" id="birth_time" name="birth_time"><br><br>
+                    <label >Mâncarea preferată:</label>
+                    <input list="food" id="food" name="food"><br><br>
+                    <datalist id="food">
+                        <option value="Pizza" />
+                        <option value="Shaorma" />
+                        <option value="Burger" />
+                        <option value="Ciorbă" />
+                        <option value="Pui" />
+                    </datalist><br>
+                    <label >Culoare preferată:</label>
+                    <input type="color" id="color" name="color"><br><br>
+                    <label >Adresa paginii personale:</label>
+                    <input type="url" id="page" name="page" onkeyup="enable()"><br><br>
+                    <label >Descriere:</label><br>
+                    <textarea rows="5"></textarea><br><br>
+                    <button type="submit" disabled id="btn">Înregistrează</button>
+                </fieldset>
+            </form>
+        </main>
+    </body>
+</html>

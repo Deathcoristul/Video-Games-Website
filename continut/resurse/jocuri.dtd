@@ -1,0 +1,13 @@
+<!ELEMENT jocuri (joc+)>
+<!ELEMENT joc (nume,tip,firma,data,online)>
+<!ATTLIST joc id NMTOKEN #REQUIRED>
+<!ELEMENT nume (#PCDATA)>
+<!ELEMENT tip (#PCDATA)>
+<!ELEMENT firma (nume_firma,locatie)>
+<!ELEMENT nume_firma (#PCDATA)>
+<!ELEMENT locatie (#PCDATA)>
+<!ELEMENT data (an,luna,zi)>
+<!ELEMENT an (#PCDATA)>
+<!ELEMENT luna (#PCDATA)>
+<!ELEMENT zi (#PCDATA)>
+<!ELEMENT online (#PCDATA)>

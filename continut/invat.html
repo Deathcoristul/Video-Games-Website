@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Învăț</title>
+        <link rel="stylesheet" href="css/stil.css" />
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <main id="continut">
+        <aside>
+            <ul>
+                <li><a href="#top">Funcții specifice browser-ului</a></li>
+                <li><a href="#mid">Canvas</a></li>
+                <li><a href="#bot">Modificare Tabel</a></li>
+            </ul>
+        </aside>
+        <section>
+            <h1 id="top" style="text-align: center;">Funcții specifice browser-ului</h1>
+            <h3 id="lang" onclick="myLang()">Limbaj:</h3>
+            <h3 id="origin" onclick="myOrigin()">Originea:</h3>
+            <h3 id="os" onclick="myOS()">Platform:</h3>
+            <h3 id="url" onclick="myURL()">Adresa URL:</h3>
+            <h3 id="appname" onclick="appName()">Nume Aplicație:</h3>
+            <h3 id="appversion" onclick="appVersion()">Versiune Aplicație:</h3>
+            <h3 id="codename" onclick="appCodeName()">Cod Aplicație:</h3>
+            <h3 id="agent" onclick="userAgent()">User Agent:</h3>
+        </section>
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <aside>
+            <ul>
+                <li><a href="#top">Funcții specifice browser-ului</a></li>
+                <li><a href="#mid">Canvas</a></li>
+                <li><a href="#bot">Modificare Tabel</a></li>
+            </ul>
+        </aside>
+        <section>
+            <h1 id="mid" style="text-align: center;">Canvas-ul</h1>
+            <canvas id="myCanvas" width="1500" height="200" onclick="drawCanvas(event)"></canvas><br/>
+            <label>Selectează culori:</label>
+            <input type="color" id="fill" name="fill" value="#ff0000">
+            <input type="color" id="border" name="border" value="#ff0000">
+        </section>
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <aside>
+            <ul>
+                <li><a href="#top">Funcții specifice browser-ului</a></li>
+                <li><a href="#mid">Canvas</a></li>
+                <li><a href="#bot">Modificare Tabel</a></li>
+            </ul>
+        </aside>
+        <section>
+            <h1 id="bot" style="text-align: center;">Modificare Tabel</h1>
+            <label for="index">Pozitia:</label>
+            <input type="number" id="index" name="index">
+            <label for="tabcolor">Culoare:</label>
+            <input type="color" id="tabcolor" name="tabcolor" value="#ff0000" onchange="ColorChange()">
+            <input type="button" id="newline" name="newline" value="Inserează linie nouă" onclick="NewLine()">
+            <input type="button" id="newcolumn" name="newcolumn" value="Inserează coloană nouă" onclick="NewColumn()">
+            <table id="myTable">
+                <tr>
+                    <th>Companii de jocuri</th>
+                    <th>Locație</th>
+                    <th>Data înființării</th>
+                </tr>
+                <tr>
+                    <td>Rockstar Games</td>
+                    <td>SUA, NY</td>
+                    <td>decembrie 1998</td>
+                </tr>
+                <tr>
+                    <td>Electronic Arts</td>
+                    <td>SUA, California</td>
+                    <td>mai 1982</td>
+                </tr>
+                <tr>
+                    <td>Ubisoft</td>
+                    <td>Franța, Montreuil</td>
+                    <td>martie 1986</td>
+                </tr>
+            </table>
+        </section>
+        </main>
+    </body>
+</html>

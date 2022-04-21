@@ -1,0 +1,103 @@
+body{
+    /*background-color: rgb(0, 149, 255);*/
+    background-image: url("../imagini/background.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1600px 750px;
+}
+nav{
+    background-color:rgb(204, 203, 203);
+    padding:5px;
+    font-size:30px;
+    text-align:center;
+}
+p, form>label, form>fieldset>label{
+    font-size: 20px;
+}
+button{
+    background-color: blue;
+    color:white;
+}
+header{
+    background-image: url('../imagini/games.jpg');
+    background-repeat:repeat-x;
+    background-size:contain;
+}
+#title{
+    color: lime;
+    text-shadow: 3px 3px #0000ff;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 60px;
+    font-style: oblique;
+}
+aside{
+    float: right;
+    padding-right: 20px;
+    border:1px solid #4800ff;
+    border-radius: 20px;
+}
+nav a{
+    padding:5px;
+}
+nav a:hover{
+    background-color:white;
+    padding-left:7px;
+    padding-right:7px;
+}
+
+nav a:active{
+    background-color:rgb(0, 255, 13);
+    color:blue;
+    padding-left:7px;
+    padding-right:7px;
+}
+footer{
+    text-align:center;
+}
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+form#signup,form#check{
+    padding:20px;
+    text-align: center;
+}
+#games{
+    margin-left: auto; 
+    margin-right: auto;
+}
+fieldset{
+    border-color:lime;
+    border-style: solid;
+    border-radius: 10px;
+}
+form>fieldset>input{
+    border-radius: 10px;
+}
+#loginbtn{
+    color:white;
+    background-color: blue;
+}
+.flex-container{
+    display:inline-flexbox;
+    flex-wrap: nowrap;
+}
+.flex-container > div >iframe{
+    background-color: red;
+}
+::selection{
+    background:green;
+    color:yellow
+}
+canvas{
+    border:1px solid #000000;
+    background-color: #8686ff;
+}
+@media screen and (max-width: 600px) {
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+}
